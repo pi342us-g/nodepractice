@@ -20,7 +20,7 @@ bulbEmitter.on("bulbSwitchedOn", (location) => {
 
 // function to swithch on the bulb
 function switchOnBulb(location){
-    console.log("\n--- Switching on Bulb")
+    console.log("\n--- Switching on Bulb" + location)
     bulbEmitter.emit("bulbSwitchedOn", location)
 };
 
