@@ -5,12 +5,12 @@ const EventsEmitter = require("events")
 const orderEmitter =new EventsEmitter();
 
 // create a listener for the order
-orderEmitter.on("orderPlaced",(orederId)=>{
+orderEmitter.on("orderPlaced",(orderId)=>{
     console.log(`order with the id #${orderId} has been placed`)
 });
 
 // create a listener for sending a confirmation
-orderEmitter.on("orderPlaced",(orderId)={
+orderEmitter.on("orderPlaced",(orderId)=>{
     console.log(`Sending a confirmation for the order id #${orderId}`)
 })
 
