@@ -17,7 +17,7 @@ console.log()
 // inside  installchalk package and use it on out put
 
 // import the module so that we can use it
-const welcome = require("./welcome")
+const welcome = require("./welcome") 
 
 // invoke the function sayHello() which is inside the module welcome.js
 welcome.sayHello()
