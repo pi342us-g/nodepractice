@@ -13,6 +13,10 @@ const myServer = http.createServer((req,res) =>{
             res.writeHead(500,{'content-type':'html'})
 
         }
+        else{
+            res.writeHead(200,{'content-type':'html'})
+            res.end(data);
+        }
         
        
     })
@@ -21,3 +25,5 @@ const myServer = http.createServer((req,res) =>{
 myServer.listen(3000,()=>{
     console.log("The server is running")
 })
+// create a new js file "server4.js" and also a new html tmplate
+// use same format to read and render the  template into the browser

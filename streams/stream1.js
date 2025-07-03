@@ -6,8 +6,9 @@ const readStream = fs.createReadStream("input.txt","utf-8");
 
 // below event will be triggered everytime a chunk of data is available
 readStream.on("data",(chunk)=>{
-    const newText = chunk.trim().toUpperCase()
-    console.log("The read of data from input.txt are\n\n" + newText)
+     const newText = chunk.trim().toUpperCase()
+    //console.log(chunk)
+     console.log("The read of data from input.txt are\n\n" + newText)
 });
 
 // below event will be triggered when entire data has been read
