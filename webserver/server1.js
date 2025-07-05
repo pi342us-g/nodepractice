@@ -17,6 +17,6 @@ fs.readFile('home.html',(err,data)=>{
 })
 })
 // specufy which port is the server running?
-server.listen(300,()=>{
+server.listen(3000,()=>{
     console.log("The server is already running")
 })
